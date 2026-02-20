@@ -1,0 +1,42 @@
+{
+  "name": "campusos",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "deploy:check": "npm run lint && npm run build && npm audit --omit=dev",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.511.0",
+    "next": "^16.1.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@playwright/test": "^1.56.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "^16.1.6",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2"
+  }
+}
