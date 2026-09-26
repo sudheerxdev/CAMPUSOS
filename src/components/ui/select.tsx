@@ -12,6 +12,7 @@ const Select = React.forwardRef<HTMLSelectElement, React.ComponentProps<"select"
           className,
         )}
         {...props}
+        
       >
         {children}
       </select>
